@@ -1,129 +1,155 @@
+---
+marp: true
+---
+
 <!--
-theme: gaia
-class:
- - invert
-headingDivider: 2 
+theme: uncover
+class: invert
 paginate: true
+_paginate: false
 -->
 
-<!--
-_class:
- - lead
- - invert
--->
 
-# Deploy Marp to GitHub Pages
+<!-- _footer: "Hour of Code 2025 🤝 SNCF Connect & Tech 🤝 Ecole Sacré Coeur La Bruffière" -->
 
-Presentations to Webpages: Instantly!
+![bg](img/background_hour_of_code.png)
 
-## What?
+---
 
-[Marp](https://marp.app/) lets you create HTML slides from markdown (like this!).
+<!-- _footer: "Hour of Code 2025 🤝 SNCF Connect & Tech 🤝 Ecole Sacré Coeur La Bruffière" -->
 
-This presentation is both a [website](https://alexsci.com/marp-to-pages) and a [README.md](https://github.com/ralexander-phi/marp-to-pages/blob/main/README.md).
+### Apprendre à
+## programmer
+#### en s'amusant
 
-## Why?
-
-Treat your presentation the same way you treat code.
-
-- Use git to track changes
-- Pull requests to collaborate
-- Deploy automatically
-- See a problem? Open an issue!
-
-## Setup
-
-Want to create your own?
-
-First, create a new repo [from the template repo](https://github.com/ralexander-phi/marp-to-pages).
-
-![](img/use-template.png)
-
-## Configure GitHub Pages
-
-Open your new repo and [setup publishing](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source).
-
-You'll typically use `gh-pages` as the deploy branch.
-
-## Review Build
-
-Click on Actions tab and see if the build succeeded (it may take some time).
-
-![](img/click-actions.png)
-
-You should now see the generated files in the `gh-pages` branch.
-
-## View webpage
-
-Open your deployed webpage to see the content.
-
-Out of the box you should see `README.md` as `/index.html` and `/README.pdf`. Slides under `docs/` are also converted.
-
-## Running locally
-
-Locally you'll run commands like:
-
-```
-$ marp README.md -o build/README.pdf
-```
-
-or
-
-```
-$ npx @marp-team/marp-cli@latest README.md -o build/README.pdf
-```
-
-## As a workflow step
-
-The workflow runs an equivalent step:
-
-```
-- name: Marp Build (README.pdf)
-  uses: docker://marpteam/marp-cli:v1.7.0
-  with:
-    args: README.md -o build/README.pdf
-  env:
-    MARP_USER: root:root
-```
-
-Note the `args` match the previous slide.
-
-## Customizing the build
-
-Anything in the `build/` folder will be deployed to GitHub Pages.
-
-You can copy extra files or run further processing steps using other tools.
-
-## Learn more about Marp
-
-This is a good time to learn more about Marp. Here's some resources:
-
-- [CommonMark](https://commonmark.org/)
-- [Cheat Sheet](https://commonmark.org/help/)
-- [Themes](https://github.com/marp-team/marp-core/tree/master/themes)
-- [CSS Themes](https://marpit.marp.app/theme-css)
-- [Directives](https://marpit.marp.app/directives)
-- [VS Code plugin](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
-
-## Example Sites
-
-Known sites using this action are:
-
-- [University of Illinois at Urbana-Champaign's CS 199 Even More Practice](https://cs199emp.netlify.app/) [(code)](https://github.com/harsh183/emp-125)
-- [Exploring agent based models](https://roiarthurb.github.io/Talk-UMMISCO_06-07-2020/) [(code)](https://github.com/RoiArthurB/Talk-UMMISCO_06-07-2020)
-
-Send a [pull request](https://github.com/ralexander-phi/marp-to-pages) to get your site added.
-
-## Publish your slides
-
-When you are ready to share your presentation, commit or merge to `main` and your content on GitHub Pages will automatically update.
-
-# 🎉
-<!--
-_class:
- - lead
- - invert
--->
-### Hooray!
+![height:200 logo hour of code](img/logo_hour_of_code.jpg)
 
 
+---
+
+### Qui suis-je ?
+
+
+  - Mickaël
+  - découverte d'un ordinateur à 3 ans
+  - travaille dans l'informatique depuis 17 ans
+
+![bg left:25% 100%](img/qui-suis-je-001.png)
+
+---
+
+### Qui suis-je ?
+
+
+  - Mickaël
+  - découverte d'un ordinateur à 3 ans
+  - travaille dans l'informatique depuis 17 ans
+
+![bg left:25% 100%](img/qui-suis-je-002.png)
+
+
+----
+
+Nantes, Paris et Lille
+
+![w:1024 bureaux sncf connect and tech](img/bureaux.jpg)
+
+
+----
+
+L'application et le site web pour acheter des billets de train en France
+
+![w:1024 application SNCF Connect](img/appli-sncf-connect.jpg)
+
+---
+
+
+## La programmation
+
+- A quoi ça sert ?
+- Qui peut en faire ?
+
+![h:200 logo hour of code](img/logo_hour_of_code.jpg)
+
+----
+
+![bg smartphone](img/smartphone.png)
+
+----
+
+![bg h:100% ordinateur](img/ordinateur.jpg)
+
+
+----
+
+![bg h:100% calculatrice](img/calculatrice.jpg)
+
+----
+
+![bg h:100% lave-linge](img/lave-linge.jpg)
+
+----
+
+![bg](img/electromenager.jpg)
+
+----
+
+![bg](img/voiture.jpg)
+
+----
+
+![bg h:100%](img/trotinette-electrique.jpg)
+
+----
+
+# Le point commun ?
+
+![](img/electronique.jpg)
+
+* Circuit électronique
+
+----
+
+### On trouve de la programmation
+## partout !
+
+  - jouets électroniques
+  - jeux vidéos
+  - fusées
+  - imagerie médicale (radio, scanner, IRM, ...)
+  - musique
+  - effets spéciaux dans les films
+
+
+----
+
+Programmation = des listes d'instructions
+![h:600](img/lego.png)
+
+
+---
+
+# 🤔 Qui
+
+## peut programmer ? 👩‍💻👨‍💻
+
+----
+
+Tout le monde !
+
+![](img/diversite_scolaire.png)
+
+----
+
+<span style="font-size: 0.8em">et pourtant ...</span>
+
+![w:250](img/un_quart_filles.png)
+
+<span style="font-size: 0.8em">...</span> <span style="font-size: 1.2em">**peu de filles**</span> <span style="font-size: 0.8em">en font leur</span> <span style="font-size: 1.2em">**métier**</span> <span style="font-size: 0.8em">...</span>
+
+<span style="font-size: 0.8em">... mais celles qui</span> <span style="font-size: 1.3em">**découvrent**</span> <span style="font-size: 0.8em">la</span> <span style="font-size: 1.3em">**programmation**</span> <span style="font-size: 0.8em">en</span> <span style="font-size: 1.2em">**primaire**</span> <span style="font-size: 0.8em">ou au</span> <span style="font-size: 1.2em">**collège**</span> <span style="font-size: 0.8em">ont</span> <span style="font-size: 1.5em">**10x**</span> <span style="font-size: 0.8em">plus de</span> <span style="font-size: 1.3em">**chances**</span> <span style="font-size: 0.8em">de faire des</span> <span style="font-size: 1.2em">**études supérieures**</span> <span style="font-size: 0.8em">dans ce domaine.</span>
+
+
+---
+
+![bg h:100%](img/instructions%20scratch.png)
