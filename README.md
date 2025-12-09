@@ -152,4 +152,12 @@ Tout le monde !
 
 ---
 
+## À vous 🎮
+
+### de 🧩
+
+# Jouer ! 🚀🎉
+
+---
+
 ![bg h:100%](img/instructions%20scratch.png)
